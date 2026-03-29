@@ -276,78 +276,39 @@ display: flex;
   color: white;
 }
 
-/* Responsive */
-@media screen and (max-width: 900px) {
-  /* Hero section */
-  .hero {
-    flex-direction: column;
-    text-align: center;
+@media screen and (max-width: 900px){
+  .hero { 
+    flex-direction: column; 
+    text-align: center; 
   }
-  .hero-right {
-    display: none; /* hide right images on mobile */
+  .hero-right { 
+    display: none; /* remove images on mobile */ 
   }
-
-  /* Features section */
-  .features {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+  .features { 
+    flex-direction: column; 
+    gap: 30px; 
   }
-
-  /* Product cards / categories */
-  .category-cards, .product-grid {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center; /* fixed typo: align-items */
+  .category-cards { 
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+  }
+  .product-grid { 
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; /* fixed typo: align-items not align-item */ 
   }
 
-  /* Navbar adjustments */
-  .navbar {
-    flex-direction: column; /* stack logo and nav */
-    align-items: center;
+  /* Fixed navbar menu */
+  .navbar nav ul { 
+    justify-content: flex-start; 
+    padding-left: 20px; /* reduce padding so Contact shows */
+    gap: 15px; /* optional spacing between options */
+    overflow-x: auto; /* in case screen is too narrow */
   }
 
-  .navbar nav ul {
-    display: flex; /* keep options inline */
-    flex-direction: row; /* horizontal */
-    justify-content: center;
-    flex-wrap: wrap; /* wrap if screen too small */
-    padding-left: 0; /* remove extra padding */
-    margin-top: 10px;
-    gap: 15px; /* spacing between options */
-  }
-
-  .navbar nav ul li {
-    list-style: none;
-  }
-
-  .navbar nav ul li a {
-    font-size: 16px;
-    padding: 8px 12px;
-
-
-  /* Social wrapper */
   .wrapper {
     padding: 20px 0;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* Language selector on mobile */
-  .lang-selector {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  /* Footer adjustments */
-  .footer-content {
-    text-align: center;
-    padding: 10px;
-  }
-
-  /* Make sure contact section fits */
-  #contact-section {
-    padding: 30px 15px;
   }
 }
 
