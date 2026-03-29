@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 const translations = {
   en: {
     logo: "Yara Store",
-    nav: { home: "Home", shop: "Shop", contact: "Contact" },
+    nav: { home: "Home", shop: "Product", contact: "Contact" },
     home: { title: "Define Your Style", shopBtn: "Shop Now" },
     features: [
       { title: "Fast Delivery", desc: "Got your clothes delivered quickly and right on time" },
