@@ -15,7 +15,8 @@ body, html {
   width: 100%;
   background: pink;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 20px;
   align-items: center;
   padding: 15px 20px;
   z-index: 1000;
