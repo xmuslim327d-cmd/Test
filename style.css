@@ -547,66 +547,49 @@ display: flex;
   opacity: 0.8;
 }
 
-/* Language Dropdown Between Logo and Nav */
 .lang-dropdown {
   position: relative;
-  margin-left: 20px;
+  left: -50px;
+  display: inline-block;
+  margin: 0 20px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
-/* Current flag box */
 .lang-current {
   padding: 5px;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s;
 }
 
-.lang-current:hover {
-  background-color: #ff85c1;
-}
-
-/* Small flag images */
-.flag-small {
+.lang-current img {
   width: 25px;
-  height: 15px;
-  object-fit: cover;
+  height: auto;
 }
 
-/* Dropdown flags container */
 .lang-menu {
   position: absolute;
-  top: 100%;
+  top: 40px; /* below current flag */
   left: 50%;
   transform: translateX(-50%);
-  display: none; /* hidden by default */
+  display: none; /* hidden initially */
   flex-direction: column;
-  background-color: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  border-radius: 8px;
-  overflow: hidden;
-  margin-top: 5px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
-/* Show dropdown when parent active */
-.lang-dropdown.active .lang-menu {
-  display: flex;
-}
-
-/* Dropdown flag items */
 .lang-menu img {
-  padding: 5px;
-  margin: 2px 0;
-  cursor: pointer;
+  width: 30px;
+  margin: 5px 0;
   transition: transform 0.2s;
 }
 
 .lang-menu img:hover {
   transform: scale(1.2);
+}
+
+/* Show menu when active */
+.lang-dropdown.active .lang-menu {
+  display: flex;
 }
