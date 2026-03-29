@@ -78,13 +78,13 @@ const translations = {
     ],
     categories: { shopTitle: "المتجر", howToBuyTitle: "كيفية الشراء؟", howToBuyDesc: "قم بالتقاط صورة للمنتج وأرسلها إلينا على WhatsApp مع عنوانك ورقم هاتفك." },
     contact: { title: "اتصل بنا" },
-    footer: { copyright: "© 2026 يارا ستور. جميع الحقوق محفوظة.", designedBy: "تم التصميم بواسطة يارا ستور" },
+    footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
-      { name: "فستان بنفسجي", price: "10,000 ع.د" },
-      { name: "فستان أسود", price: "10,000 ع.د" },
-      { name: "فستان بني", price: "10,000 ع.د" },
-      { name: "فستان برتقالي", price: "10,000 ع.د" },
-      { name: "فستان وردي", price: "10,000 ع.د" }
+      { name: "أرجواني", price: "10,000 ع.د" },
+      { name: "أسود", price: "10,000 ع.د" },
+      { name: "بني", price: "10,000 ع.د" },
+      { name: "برتقالي", price: "10,000 ع.د" },
+      { name: "وردي", price: "10,000 ع.د" }
     ]
   }
 };
