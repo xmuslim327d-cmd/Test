@@ -88,7 +88,7 @@ display: flex;
 
 /* Features Section */
 .features {
-  background-color: gold; /* colored background */
+  background-color: beige; /* colored background */
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -155,7 +155,7 @@ display: flex;
 
 /* Contact Section */
 .contact {
-  background-color: gold; /* colored background */
+  background-color: beige; /* colored background */
   text-align: center;
   padding: 5px 10px;
 }
