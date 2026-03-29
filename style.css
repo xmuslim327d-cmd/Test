@@ -204,5 +204,5 @@ display: flex;
   .features { flex-direction: column; gap: 30px; }
   .category-cards { flex-direction: column; gap: 20px; align-items: center; }
   .product-grid { flex-direction: column; gap: 20px; }
-  .navbar nav ul { justify-content: flex-start; padding-left: 2px; } /* move navbar options slightly left */
+  .navbar nav ul { justify-content: flex-start; padding-left: 50px; } /* move navbar options slightly left */
 }
