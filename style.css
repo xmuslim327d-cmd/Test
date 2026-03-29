@@ -111,7 +111,7 @@ display: flex;
 /* Categories Section */
 .categories {
   text-align: center;
-  padding: 50px 20px;
+  padding: 80px 20px;
   min-height: 100vh;
   background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487597814006550568/IMG_4772.jpg?ex=69c9b8ed&is=69c8676d&hm=2ac0b9631fb0d87e6ec1d6e002561fb00998b560fdc2660f147c360645fd0204&');
   background-size: cover;
@@ -208,6 +208,7 @@ display: flex;
   flex-wrap: wrap;
   justify-content: center; /* ensures cards are centered */
   gap: 30px;
+  margin: 0 auto;
   max-width: 1200px;
 }
 
