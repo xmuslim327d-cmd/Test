@@ -306,8 +306,7 @@ display: flex;
     padding-left: 0px; /* reduce padding so Contact shows */
     gap: 25px; /* optional spacing between options */
     overflow-x: auto;
-    position: relative;
-  left: -35px;/* in case screen is too narrow */
+    /* in case screen is too narrow */
   }
 
   .wrapper {
