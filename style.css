@@ -13,7 +13,6 @@ body, html {
   position: fixed;
   top: 0;
   width: 100%;
-  background: pink;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
