@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yara Store</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -21,28 +22,31 @@
 </header>
 
 <!-- Home Section -->
-<section id="home-section" class="hero">
-  <div class="hero-left">
-    <h1>Define Your Style</h1>
-    <button class="shop-btn" onclick="scrollToSection('categories-section')">Shop Now</button>
+<section id="home-section" class="hero" data-aos="fade-up">
+  <div class="hero-left" data-aos="fade-right" data-aos-delay="200">
+    <h1 data-aos="fade-down" data-aos-delay="400">Define Your Style</h1>
+    <button class="shop-btn" onclick="scrollToSection('categories-section')" data-aos="zoom-in" data-aos-delay="600">
+      Shop Now
+    </button>
   </div>
-  <div class="hero-right">
+  <div class="hero-right" data-aos="fade-left" data-aos-delay="800">
+    <!-- You can add an image or illustration here -->
   </div>
 </section>
 
 <!-- Features Section -->
 <section class="features">
-  <div class="feature">
+  <div class="feature" data-aos="fade-up" data-aos-delay="100">
     <img src="deliv.PNG" alt="Fast Delivery">
     <h3>Fast Delivery</h3>
     <p>Got your clothes delivered quickly and right on time</p>
   </div>
-  <div class="feature">
+  <div class="feature" data-aos="fade-up" data-aos-delay="300">
     <img src="support.PNG" alt="24/7 Support">
     <h3>24/7 Support</h3>
     <p>Got a question? Support team stays on, 24/7</p>
   </div>
-  <div class="feature">
+  <div class="feature" data-aos="fade-up" data-aos-delay="500">
     <img src="return.PNG" alt="Easy Return">
     <h3>Easy Return</h3>
     <p>If it doesn’t hit right, send it back — easy and fast</p>
@@ -55,90 +59,89 @@
 
   <div class="product-grid">
 
-    <div class="product-card">
+    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
       <img src="pp.JPG">
       <p>Purple Dress</p>
-       <span class="price">10,000 iqd</span>
+      <span class="price">10,000 iqd</span>
       <a href="https://wa.me/964XXXXXXXXXX" class="order-btn">Order</a>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
       <img src="bp.JPG">
       <p>Black Dress</p>
-       <span class="price">10,000 iqd</span>
+      <span class="price">10,000 iqd</span>
       <a href="https://wa.me/964XXXXXXXXXX" class="order-btn">Order</a>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
       <img src="brp.JPG">
       <p>Brown Dress</p>
-       <span class="price">10,000 iqd</span>
+      <span class="price">10,000 iqd</span>
       <a href="https://wa.me/964XXXXXXXXXX" class="order-btn">Order</a>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
       <img src="op.JPG">
       <p>Orange Dress</p>
-       <span class="price">10,000 iqd</span>
+      <span class="price">10,000 iqd</span>
       <a href="https://wa.me/964XXXXXXXXXX" class="order-btn">Order</a>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-aos="fade-up" data-aos-delay="500">
       <img src="pip.JPG">
       <p>Pink Dress</p>
-       <span class="price">10,000 iqd </span>
+      <span class="price">10,000 iqd</span>
       <a href="https://wa.me/964XXXXXXXXXX" class="order-btn">Order</a>
     </div>
 
-<div class="buy-feature">
-    <h2>How To Buy?</h2>
-    <p>Screenshot a product and send it to us on WhatsApp with your address and phone number.</p>
-  </div>
+    <div class="buy-feature" data-aos="fade-up" data-aos-delay="600">
+      <h2>How To Buy?</h2>
+      <p>Screenshot a product and send it to us on WhatsApp with your address and phone number.</p>
+    </div>
     
   </div>
 </section>
 
-    
-
-
-<!-- Contact Section -->
-<section id="contact-section" class="contact">
+    <!-- Contact Section -->
+<section id="contact-section" class="contact" data-aos="fade-up">
   <h2>Contact Us</h2>
+
   <ul class="wrapper">
+    <!-- WhatsApp -->
+    <li class="icon whatsapp" data-aos="zoom-in" data-aos-delay="100">
+      <a href="https://wa.me/964XXXXXXXXXX" target="_blank">
+        <span class="tooltip">WhatsApp</span>
+        <img src="what.PNG" class="social-img">
+      </a>
+    </li>
 
-  <!-- WhatsApp -->
-  <li class="icon whatsapp">
-    <a href="https://wa.me/964XXXXXXXXXX" target="_blank">
-      <span class="tooltip">WhatsApp</span>
-      <img src="what.PNG" class="social-img">
-    </a>
-  </li>
+    <!-- TikTok -->
+    <li class="icon tiktok" data-aos="zoom-in" data-aos-delay="200">
+      <a href="https://tiktok.com/@yarastore14" target="_blank">
+        <span class="tooltip">TikTok</span>
+        <img src="tik.PNG" class="social-img">
+      </a>
+    </li>
 
-  <!-- TikTok -->
-  <li class="icon tiktok">
-    <a href="https://tiktok.com/@yarastore14" target="_blank">
-      <span class="tooltip">TikTok</span>
-      <img src="tik.PNG" class="social-img">
-    </a>
-  </li>
+    <!-- Instagram -->
+    <li class="icon instagram" data-aos="zoom-in" data-aos-delay="300">
+      <a href="https://instagram.com/_yarastore.online" target="_blank">
+        <span class="tooltip">Instagram</span>
+        <img src="ins.PNG" class="social-img">
+      </a>
+    </li>
+  </ul>
 
-  <!-- Instagram -->
-  <li class="icon instagram">
-    <a href="https://instagram.com/_yarastore.online" target="_blank">
-      <span class="tooltip">Instagram</span>
-      <img src="ins.PNG" class="social-img">
-    </a>
-  </li>
-
-</ul>
-  
-  <footer class="footer">
-  <div class="footer-content">
-    <p>© 2026 Yara Store. All rights reserved.</p>
-    <p class="made-by">Designed by Yara Store</p>
-  </div>
-</footer>
+  <footer class="footer" data-aos="fade-up" data-aos-delay="400">
+    <div class="footer-content">
+      <p>© 2026 Yara Store. All rights reserved.</p>
+      <p class="made-by">Designed by Yara Store</p>
+    </div>
+  </footer>
 </section>
+
+
+
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/964XXXXXXXXXX" target="_blank" class="whatsapp-btn">
@@ -151,7 +154,15 @@
     <div class="text">Whatsapp</div>
   </button>
 </a>
-  
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation speed in ms
+    once: true      // animation happens only once while scrolling
+  });
+</script>
 
 <script src="script.js"></script>
 </body>
