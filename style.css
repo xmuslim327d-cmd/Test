@@ -565,7 +565,7 @@ display: flex;
   font-weight: bold;
   transition: background 0.2s;
   position: relative;
-  left: -35px;
+  left: -30px;
 }
 
 .lang-current:hover {
