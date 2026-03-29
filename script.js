@@ -60,11 +60,11 @@ const translations = {
     contact: { title: "پەیوەندیمان پێوە بكه‌" },
     footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
-      { name: "کەڵەی پەرپل", price: "10,000 دینار" },
-      { name: "کەڵەی ڕەش", price: "10,000 دینار" },
-      { name: "کەڵەی قاوەی", price: "10,000 دینار" },
-      { name: "کەڵەی نارنجی", price: "10,000 دینار" },
-      { name: "کەڵەی پینک", price: "10,000 دینار" }
+      { name: "مۆر", price: "10,000 دینار" },
+      { name: "ڕەش", price: "10,000 دینار" },
+      { name: "قاوەیی", price: "10,000 دینار" },
+      { name: "نارنجی", price: "10,000 دینار" },
+      { name: "په‌مه‌یی", price: "10,000 دینار" }
     ]
   },
   ar: {
