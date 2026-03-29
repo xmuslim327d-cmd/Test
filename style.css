@@ -52,9 +52,10 @@ display: flex;
   align-items: center;
   padding: 150px 20px 50px;
   min-height: 50vh;
-  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487597806893007070/IMG_4773.jpg?ex=69c9b8eb&is=69c8676b&hm=a77b7ba09551d9f90e05ba9474da03e8a2b45a4e9976d738ca0caf7559a4655f&'); /* custom background image */
+  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487605384775471187/IMG_4778.jpg?ex=69c9bffa&is=69c86e7a&hm=ddf76cc595113321b193d97bb1fbfb1ecc39440c5bcd308fcda51f37092f1ad0&'); /* custom background image */
   background-size: cover;
-  background-position: top;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-left h1 {
