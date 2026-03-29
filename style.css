@@ -519,7 +519,7 @@ display: flex;
 .lang-selector {
   position: relative;
   display: inline-block;
-  margin-left: 3px;
+  margin-left: 0;
   cursor: pointer;
   user-select: none;
 }
