@@ -56,9 +56,9 @@ const translations = {
       { title: "پشتیوانی 24/7", desc: "پرسیارێکتان هەیە؟ تیمی پشتگیری دەمێنێتەوە، ٢٤/٧" },
       { title: "گەڕاندنەوەی ئاسان", desc: "ئەگەر بەرهەمه‌كه‌ هه‌له بوو، بینێرەوه‌ — ئاسان و خێرا" }
     ],
-    categories: { shopTitle: "دوکان", howToBuyTitle: "چۆنیەتی کڕین؟", howToBuyDesc: "وێنەی بەرهەمەکە بەستەرە و بۆمان نێرە لە WhatsApp بە ناونیشان و ژمارە تەلەفونت." },
-    contact: { title: "پەیوەندیمان پێوە" },
-    footer: { copyright: "© 2026 یارا ستۆر. مافی هەموو شت پارێزراوە.", designedBy: "دیزاینکراو لەلایەن یارا ستۆر" },
+    categories: { shopTitle: "بەرهەم", howToBuyTitle: "چۆنیەتی کڕین؟", howToBuyDesc: "سکرین شۆت بۆ بەرهەمێک بکە و لە واتسئەپ بۆمان بنێرە لەگەڵ ناونیشان و ژمارەی تەلەفۆنەکەت." },
+    contact: { title: "پەیوەندیمان پێوە بكه‌" },
+    footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
       { name: "کەڵەی پەرپل", price: "10,000 دینار" },
       { name: "کەڵەی ڕەش", price: "10,000 دینار" },
