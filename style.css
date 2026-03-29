@@ -302,16 +302,29 @@ display: flex;
   }
 
   /* Navbar adjustments */
+  .navbar {
+    flex-direction: column; /* stack logo and nav */
+    align-items: center;
+  }
+
   .navbar nav ul {
-    flex-direction: column; /* stack menu vertically */
-    justify-content: flex-start;
-    padding-left: 20px; /* reduce left padding */
-    width: 100%;
+    display: flex; /* keep options inline */
+    flex-direction: row; /* horizontal */
+    justify-content: center;
+    flex-wrap: wrap; /* wrap if screen too small */
+    padding-left: 0; /* remove extra padding */
+    margin-top: 10px;
+    gap: 15px; /* spacing between options */
   }
 
   .navbar nav ul li {
-    margin: 10px 0; /* spacing between menu items */
+    list-style: none;
   }
+
+  .navbar nav ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+
 
   /* Social wrapper */
   .wrapper {
