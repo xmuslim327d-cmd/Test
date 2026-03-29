@@ -3,15 +3,15 @@ function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// Active nav link on scroll (for index.html)
+// Active nav link on scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (pageYOffset >= sectionTop) {
+    const sectionTop = section.offsetTop - 120;
+    if (window.pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
   });
@@ -50,7 +50,7 @@ const translations = {
   ku: {
     logo: "Yara Store",
     nav: { home: "Home", shop: "Product", contact: "Contact" },
-    home: { title: "شێوەی خۆت دیاری بکە", shopBtn: "کڕین" },
+    home: { title: "ستایلەکەت پێناسە بکە", shopBtn: "کڕین" },
     features: [
       { title: "ناردنی خێرا", desc: "جلەکانت بە خێرایی و بەکاتی خۆیان دەگەیەنرێن" },
       { title: "پشتیوانی 24/7", desc: "پرسیارێکتان هەیە؟ تیمی پشتگیری دەمێنێتەوە، ٢٤/٧" },
@@ -89,80 +89,45 @@ const translations = {
   }
 };
 
-// Function to change language
+
+// Change language function
 function changeLanguage(lang) {
   const t = translations[lang];
 
-  // Logo
   document.querySelector(".logo").textContent = t.logo;
 
-  // Nav links
   document.querySelectorAll(".nav-link")[0].textContent = t.nav.home;
   document.querySelectorAll(".nav-link")[1].textContent = t.nav.shop;
   document.querySelectorAll(".nav-link")[2].textContent = t.nav.contact;
 
-  // Home section
   document.querySelector("#home-section h1").textContent = t.home.title;
   document.querySelector("#home-section .shop-btn").textContent = t.home.shopBtn;
 
-  // Features
   document.querySelectorAll(".features .feature").forEach((el, i) => {
     el.querySelector("h3").textContent = t.features[i].title;
     el.querySelector("p").textContent = t.features[i].desc;
   });
 
-  // Categories Section
   document.querySelector("#categories-section h2").textContent = t.categories.shopTitle;
   document.querySelector("#categories-section .buy-feature h2").textContent = t.categories.howToBuyTitle;
   document.querySelector("#categories-section .buy-feature p").textContent = t.categories.howToBuyDesc;
 
-  // Products
   document.querySelectorAll(".product-card").forEach((el, i) => {
     el.querySelector("p").textContent = t.products[i].name;
     el.querySelector(".price").textContent = t.products[i].price;
   });
 
-  // Contact Section
   document.querySelector("#contact-section h2").textContent = t.contact.title;
 
-  // Footer
   document.querySelector(".footer p:first-child").textContent = t.footer.copyright;
   document.querySelector(".footer .made-by").textContent = t.footer.designedBy;
 }
-// Toggle language menu open/close
-function toggleLangMenu() {
-  const menu = document.querySelector('.lang-menu');
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-}
-
-// Close language menu
-function closeLangMenu() {
-  document.querySelector('.lang-menu').style.display = 'none';
-}
 
 
-const langCurrent = document.querySelector('.lang-current');
-const langMenu = document.querySelector('.lang-menu');
-
-langCurrent.addEventListener('click', () => {
-  langMenu.style.display = (langMenu.style.display === 'flex') ? 'none' : 'flex';
-});
-
-// Optional: hide dropdown after selecting a language
-document.querySelectorAll('.lang-menu img').forEach(flag => {
+// Flag click (IMPORTANT - this replaces old dropdown script)
+document.querySelectorAll('.lang-dropdown-card img').forEach(flag => {
   flag.addEventListener('click', (e) => {
     const lang = e.target.dataset.lang;
-    console.log("Selected language:", lang);
-    // TODO: add your language switch logic here
-
-    langMenu.style.display = 'none';
-    langCurrent.innerHTML = `<img src="${e.target.src}" class="flag-small">`;
+    changeLanguage(lang);
   });
-});
-
-// Close dropdown if clicked outside
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.lang-dropdown')) {
-    langMenu.style.display = 'none';
-  }
 });
