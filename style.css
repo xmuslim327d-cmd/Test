@@ -179,12 +179,22 @@ display: flex;
   margin-bottom: 50px;
 }
 
+/* How To Buy Section */
+.buy-feature {
+  background-color: grey; /* same style as feature section */
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 30px 0;
+  border-radius: 15px;
+}
+
+/* Product Grid Centering */
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* ensures cards are centered */
   gap: 30px;
-  margin-top: 30px
 }
 
 .product-card {
@@ -192,6 +202,10 @@ display: flex;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background-color: white;
+  color: pink;
+  text-align: center;
+  padding: 10px;
 }
 
 .product-card img {
