@@ -1,90 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yara Store</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- Scroll Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yara Store</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <div class="logo">Yara</div>
-
-    <nav id="nav">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<header class="navbar">
+  <div class="logo">Yara Store</div>
+  <nav>
+    <ul>
+      <li><a href="#home-section" class="nav-link active">Home</a></li>
+      <li><a href="#categories-section" class="nav-link">Shop</a></li>
+      <li><a href="#contact-section" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Hero -->
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-        <h1>Yara Store</h1>
-        <p>Elegant fashion for every woman.</p>
-        <button>Shop Now</button>
+<!-- Home Section -->
+<section id="home-section" class="hero">
+  <div class="hero-left">
+    <h1>Define Your Style</h1>
+    <button onclick="scrollToSection('categories-section')">Shop Now</button>
+  </div>
+  <div class="hero-right">
+    <img src="https://cdn.discordapp.com/attachments/1437821593056313537/1487597801796927508/IMG_4771.jpg?ex=69c9b8ea&is=69c8676a&hm=ce060b256efadb6b215ffc754da5e14853667b1477ed07bf25b92c357f74dbc7&" alt="Photo 1">
+    <img src="https://cdn.discordapp.com/attachments/1437821593056313537/1487597801796927508/IMG_4771.jpg?ex=69c9b8ea&is=69c8676a&hm=ce060b256efadb6b215ffc754da5e14853667b1477ed07bf25b92c357f74dbc7&" alt="Photo 2">
+    <img src="https://cdn.discordapp.com/attachments/1437821593056313537/1487597801796927508/IMG_4771.jpg?ex=69c9b8ea&is=69c8676a&hm=ce060b256efadb6b215ffc754da5e14853667b1477ed07bf25b92c357f74dbc7&" alt="Photo 3">
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="feature">
+    <img src="images/delivery-icon.png" alt="Fast Delivery">
+    <h3>Fast Delivery</h3>
+    <p>Got your clothes delivered quickly and right on time</p>
+  </div>
+  <div class="feature">
+    <img src="images/support-icon.png" alt="24/7 Support">
+    <h3>24/7 Support</h3>
+    <p>Got a question? Support team stays on, 24/7</p>
+  </div>
+  <div class="feature">
+    <img src="images/return-icon.png" alt="Easy Return">
+    <h3>Easy Return</h3>
+    <p>If it doesn’t hit right, send it back — easy and fast</p>
+  </div>
+</section>
+
+<!-- Categories Section -->
+<section id="categories-section" class="categories">
+  <h2>Categories</h2>
+  <div class="category-cards">
+    <div class="card">
+      <img src="https://cdn.discordapp.com/attachments/1437821593056313537/1487597801796927508/IMG_4771.jpg?ex=69c9b8ea&is=69c8676a&hm=ce060b256efadb6b215ffc754da5e14853667b1477ed07bf25b92c357f74dbc7&" alt="Dress">
+      <button onclick="location.href='dress.html'">Dress</button>
     </div>
-</section>
-
-<!-- Shop -->
-<section class="shop" data-aos="fade-up">
-    <h2>Our Products</h2>
-
-    <div class="products">
-        <div class="card">
-            <img src="IMG_4774.jpeg">
-            <h3>Dress</h3>
-            <p>$25</p>
-        </div>
-
-        <div class="card">
-            <img src="IMG_4774.jpeg">
-            <h3>Shirt</h3>
-            <p>$18</p>
-        </div>
-
-        <div class="card">
-            <img src="IMG_4774.jpeg">
-            <h3>Jacket</h3>
-            <p>$40</p>
-        </div>
+    <div class="card">
+      <img src="https://cdn.discordapp.com/attachments/1437821593056313537/1487597801796927508/IMG_4771.jpg?ex=69c9b8ea&is=69c8676a&hm=ce060b256efadb6b215ffc754da5e14853667b1477ed07bf25b92c357f74dbc7&" alt="Jackets">
+      <button onclick="location.href='jackets.html'">Jackets</button>
     </div>
+    <div class="card">
+      <img src="https://cdn.discordapp.com/attachments/1437821593056313537/1487597801796927508/IMG_4771.jpg?ex=69c9b8ea&is=69c8676a&hm=ce060b256efadb6b215ffc754da5e14853667b1477ed07bf25b92c357f74dbc7&" alt="Pants">
+      <button onclick="location.href='pants.html'">Pants</button>
+    </div>
+  </div>
 </section>
 
-<!-- Contact -->
-<section class="contact" data-aos="fade-up">
-    <h2>Contact Us</h2>
-    <p>WhatsApp: +964XXXXXXXXXX</p>
-    <p>Instagram: @yarastore</p>
+<!-- Contact Section -->
+<section id="contact-section" class="contact">
+  <h2>Contact</h2>
+  <p>WhatsApp: +964xxxxxxxx</p>
+  <p>Instagram: <a href="https://instagram.com/yarastore" target="_blank">@yarastore</a></p>
+  <p>TikTok: <a href="https://tiktok.com/@yarastore" target="_blank">@yarastore</a></p>
+  <p class="copyright">© 2026 Yara Store</p>
 </section>
-
-<!-- Footer -->
-<footer>
-    <p>© 2026 Yara Store. All rights reserved.</p>
-</footer>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/964XXXXXXXXXX" class="whatsapp" target="_blank">💬</a>
 
 <script src="script.js"></script>
-
-<!-- AOS Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
-
 </body>
 </html>
