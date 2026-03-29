@@ -129,3 +129,13 @@ function changeLanguage(lang) {
   document.querySelector(".footer p:first-child").textContent = t.footer.copyright;
   document.querySelector(".footer .made-by").textContent = t.footer.designedBy;
 }
+// Toggle language menu open/close
+function toggleLangMenu() {
+  const menu = document.querySelector('.lang-menu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+// Close language menu
+function closeLangMenu() {
+  document.querySelector('.lang-menu').style.display = 'none';
+}
