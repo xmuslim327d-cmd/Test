@@ -172,6 +172,7 @@ display: flex;
 
   .category-page {
   display: flex;
+  background-color: pink;
   flex-direction: column;
   align-items: center; /* centers all children including product grid */
   padding: 150px 20px 50px;
