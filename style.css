@@ -306,7 +306,7 @@ display: flex;
     gap: 15px; /* optional spacing between options */
     overflow-x: auto;
     position: relative;
-  left: -10px;/* in case screen is too narrow */
+  left: -25px;/* in case screen is too narrow */
   }
 
   .wrapper {
@@ -558,7 +558,7 @@ display: flex;
   font-weight: bold;
   transition: background 0.2s;
   position: relative;
-  left: -10px;
+  left: -25px;
 }
 
 .lang-current:hover {
