@@ -112,7 +112,7 @@ display: flex;
 .categories {
   text-align: center;
   padding: 80px 20px;
-  min-height: 70vh;
+  min-height: 100vh;
   background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487755978429435974/IMG_4787.jpg?ex=69ca4c3a&is=69c8faba&hm=a493e32d44eea23c1788332f02973d3f9e6e14a2c7faf43ab0c43fe1b12756af&');
   background-size: cover;
   background-repeat: no-repeat;
