@@ -555,6 +555,8 @@ display: flex;
   color: white;
   font-weight: bold;
   transition: background 0.2s;
+  position: relative;
+  left: -10px;
 }
 
 .lang-current:hover {
