@@ -51,10 +51,10 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 150px 20px 50px;
-  min-height: 100vh;
+  min-height: 50vh;
   background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487597806893007070/IMG_4773.jpg?ex=69c9b8eb&is=69c8676b&hm=a77b7ba09551d9f90e05ba9474da03e8a2b45a4e9976d738ca0caf7559a4655f&'); /* custom background image */
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .hero-left h1 {
