@@ -68,8 +68,8 @@ const translations = {
     ]
   },
   ar: {
-    logo: "يـارا ستور",
-    nav: { home: "الرئيسية", shop: "المتجر", contact: "اتصل بنا" },
+    logo: "Yara Store",
+    nav: { home: "Home", shop: "Product", contact: "Contact" },
     home: { title: "حدد أسلوبك", shopBtn: "تسوق الآن" },
     features: [
       { title: "توصيل سريع", desc: "استلم ملابسك بسرعة وفي الوقت المحدد" },
