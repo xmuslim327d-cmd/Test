@@ -547,12 +547,16 @@ display: flex;
   opacity: 0.8;
 }
 
+/* Language Dropdown Between Logo and Nav */
 .lang-dropdown {
   position: relative;
   margin-left: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
+/* Current flag box */
 .lang-current {
   padding: 5px;
   border-radius: 6px;
@@ -560,20 +564,27 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.2s;
 }
 
+.lang-current:hover {
+  background-color: #ff85c1;
+}
+
+/* Small flag images */
 .flag-small {
   width: 25px;
   height: 15px;
   object-fit: cover;
-  transition: transform 0.2s;
 }
 
+/* Dropdown flags container */
 .lang-menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; /* hidden by default */
   flex-direction: column;
   background-color: white;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -583,6 +594,12 @@ display: flex;
   z-index: 1000;
 }
 
+/* Show dropdown when parent active */
+.lang-dropdown.active .lang-menu {
+  display: flex;
+}
+
+/* Dropdown flag items */
 .lang-menu img {
   padding: 5px;
   margin: 2px 0;
