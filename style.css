@@ -323,6 +323,12 @@ display: flex;
     width: 24px;
     height: 24px;
   }
+
+ .whatsapp-btn {
+    bottom: 15px;
+    right: 15px;
+
+   
 /* move navbar options slightly left */
 }
 
@@ -332,7 +338,8 @@ display: flex;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 2000;
+  z-index: 9999;
+  display: flex;
   text-decoration: none; /* remove underline from link */
 }
 
