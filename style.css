@@ -550,29 +550,69 @@ display: flex;
 
 
   
-    
-  .lang-dropdown-card {
-  display: flex;
-    position: relative;
-  left: -40;
-  flex-direction: column;       /* vertical stack */
-  align-items: center;
-  gap: 5px;
-  background-color: black;      /* card color */
-  padding: 5px 8px;             /* small padding */
-  border-radius: 10px;          /* rounded corners */
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* subtle shadow */
+    /* Floating Language Button */
+.lang-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+/* Main circle flag */
+.lang-main img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   cursor: pointer;
-  margin: 0 15px;               /* space from logo/nav */
 }
 
-.lang-dropdown-card img {
-  width: 25px;                  /* smaller size */
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.2s;
+/* Flags dropdown */
+.lang-options {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.lang-dropdown-card img:hover {
-  transform: scale(1.2);        /* hover animation */
+.lang-options img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Show dropdown */
+.lang-options.show {
+  display: flex;
+}
+
+/* Jump animation */
+@keyframes jump {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-15px); }
+  60% { transform: translateY(0); }
+  100% { transform: translateY(-7px); }
+}
+
+.jump {
+  animation: jump 0.5s ease;
+}
+
+/* Circle wave animation */
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 105, 180, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+  }
+}
+
+.wave {
+  border-radius: 50%;
+  animation: wave 0.6s ease;
 }
