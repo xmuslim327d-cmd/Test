@@ -549,12 +549,19 @@ display: flex;
 
 
   
-    /* Floating Language Button */
+    /* ========================
+   Floating Language Button
+======================== */
+
+/* Container */
 .lang-float {
   position: fixed;
   bottom: 20px;
   left: 20px;
   z-index: 999;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 /* Main circle flag */
@@ -563,14 +570,19 @@ display: flex;
   height: 45px;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 /* Flags dropdown */
 .lang-options {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: 0.3s;
 }
 
 .lang-options img {
@@ -583,7 +595,9 @@ display: flex;
 
 /* Show dropdown */
 .lang-options.show {
-  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Jump animation */
@@ -601,13 +615,13 @@ display: flex;
 /* Circle wave animation */
 @keyframes wave {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.3);
   }
   70% {
-    box-shadow: 0 0 0 15px rgba(255, 105, 180, 0);
+    box-shadow: 0 0 0 15px rgba(0,0,0,0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
   }
 }
 
