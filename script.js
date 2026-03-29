@@ -1,38 +1,35 @@
-// Wait until page loads
-document.addEventListener("DOMContentLoaded", () => {
-
-  // Smooth scroll
-  window.scrollToSection = function(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  };
-
-  // Active nav link on scroll
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 140;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
-      }
-    });
-  });
-
-});
-
+// =======================
+// Smooth Scroll for Buttons
+// =======================
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 
 // =======================
-// Language translations
+// Active nav link on scroll
+// =======================
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    if (window.pageYOffset >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+// =======================
+// Translations Object
 // =======================
 const translations = {
   en: {
@@ -44,16 +41,9 @@ const translations = {
       { title: "24/7 Support", desc: "Got a question? Support team stays on, 24/7" },
       { title: "Easy Return", desc: "If it doesn’t hit right, send it back — easy and fast" }
     ],
-    categories: {
-      shopTitle: "Shop",
-      howToBuyTitle: "How To Buy?",
-      howToBuyDesc: "Screenshot a product and send it to us on WhatsApp with your address and phone number."
-    },
+    categories: { shopTitle: "Shop", howToBuyTitle: "How To Buy?", howToBuyDesc: "Screenshot a product and send it to us on WhatsApp with your address and phone number." },
     contact: { title: "Contact Us" },
-    footer: {
-      copyright: "© 2026 Yara Store. All rights reserved.",
-      designedBy: "Designed by Yara Store"
-    },
+    footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
       { name: "Purple Dress", price: "10,000 iqd" },
       { name: "Black Dress", price: "10,000 iqd" },
@@ -62,26 +52,18 @@ const translations = {
       { name: "Pink Dress", price: "10,000 iqd" }
     ]
   },
-
   ku: {
     logo: "Yara Store",
     nav: { home: "Home", shop: "Product", contact: "Contact" },
     home: { title: "ستایلەکەت پێناسە بکە", shopBtn: "کڕین" },
     features: [
       { title: "ناردنی خێرا", desc: "جلەکانت بە خێرایی و بەکاتی خۆیان دەگەیەنرێن" },
-      { title: "پشتیوانی 24/7", desc: "پرسیارێکتان هەیە؟ تیمی پشتگیری ٢٤/٧" },
-      { title: "گەڕاندنەوەی ئاسان", desc: "ئەگەر بەرهەمەکە گونجاو نەبوو، بینێرەوە — ئاسان و خێرا" }
+      { title: "پشتیوانی 24/7", desc: "پرسیارێکتان هەیە؟ تیمی پشتگیری دەمێنێتەوە، ٢٤/٧" },
+      { title: "گەڕاندنەوەی ئاسان", desc: "ئەگەر بەرهەمه‌كه‌ هه‌له بوو، بینێرەوه‌ — ئاسان و خێرا" }
     ],
-    categories: {
-      shopTitle: "بەرهەم",
-      howToBuyTitle: "چۆنیەتی کڕین؟",
-      howToBuyDesc: "سکرین شۆت بۆ بەرهەمێک بکە و لە واتسئەپ بۆمان بنێرە."
-    },
-    contact: { title: "پەیوەندیمان پێوە بکە" },
-    footer: {
-      copyright: "© 2026 Yara Store. All rights reserved.",
-      designedBy: "Designed by Yara Store"
-    },
+    categories: { shopTitle: "بەرهەم", howToBuyTitle: "چۆنیەتی کڕین؟", howToBuyDesc: "سکرین شۆت بۆ بەرهەمێک بکە و لە واتسئەپ بۆمان بنێرە لەگەڵ ناونیشان و ژمارەی تەلەفۆنەکەت." },
+    contact: { title: "پەیوەندیمان پێوە بكه‌" },
+    footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
       { name: "مۆر", price: "10,000 دینار" },
       { name: "ڕەش", price: "10,000 دینار" },
@@ -90,39 +72,30 @@ const translations = {
       { name: "په‌مه‌یی", price: "10,000 دینار" }
     ]
   },
-
   ar: {
     logo: "Yara Store",
-    nav: { home: "الرئيسية", shop: "المنتجات", contact: "اتصل بنا" },
+    nav: { home: "Home", shop: "Product", contact: "Contact" },
     home: { title: "حدد أسلوبك", shopBtn: "تسوق الآن" },
     features: [
       { title: "توصيل سريع", desc: "استلم ملابسك بسرعة وفي الوقت المحدد" },
-      { title: "دعم 24/7", desc: "فريق الدعم متاح على مدار الساعة" },
-      { title: "إرجاع سهل", desc: "إذا لم يكن مناسبًا، أعده بسهولة" }
+      { title: "دعم 24/7", desc: "لديك سؤال؟ فريق الدعم متاح على مدار الساعة" },
+      { title: "إرجاع سهل", desc: "إذا لم يكن مناسبًا، أعده — سهل وسريع" }
     ],
-    categories: {
-      shopTitle: "المتجر",
-      howToBuyTitle: "كيفية الشراء؟",
-      howToBuyDesc: "قم بتصوير المنتج وأرسله لنا على واتساب."
-    },
+    categories: { shopTitle: "المتجر", howToBuyTitle: "كيفية الشراء؟", howToBuyDesc: "قم بالتقاط صورة للمنتج وأرسلها إلينا على WhatsApp مع عنوانك ورقم هاتفك." },
     contact: { title: "اتصل بنا" },
-    footer: {
-      copyright: "© 2026 Yara Store. جميع الحقوق محفوظة.",
-      designedBy: "تصميم متجر يارا"
-    },
+    footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
-      { name: "بنفسجي", price: "10,000 د.ع" },
-      { name: "أسود", price: "10,000 د.ع" },
-      { name: "بني", price: "10,000 د.ع" },
-      { name: "برتقالي", price: "10,000 د.ع" },
-      { name: "وردي", price: "10,000 د.ع" }
+      { name: "أرجواني", price: "10,000 ع.د" },
+      { name: "أسود", price: "10,000 ع.د" },
+      { name: "بني", price: "10,000 ع.د" },
+      { name: "برتقالي", price: "10,000 ع.د" },
+      { name: "وردي", price: "10,000 ع.د" }
     ]
   }
 };
 
-
 // =======================
-// Change Language
+// Change Language Function
 // =======================
 function changeLanguage(lang) {
   const t = translations[lang];
@@ -168,45 +141,47 @@ function changeLanguage(lang) {
   localStorage.setItem("lang", lang);
 }
 
-
 // =======================
-// Flag Click Animation
+// Floating Flag Logic
 // =======================
-const flags = document.querySelectorAll('.lang-dropdown-card img');
-const mainFlag = document.getElementById("currentFlag");
+document.addEventListener("DOMContentLoaded", function () {
 
-flags.forEach(flag => {
-  flag.addEventListener('click', (e) => {
-    const lang = e.target.dataset.lang;
-    changeLanguage(lang);
+  const langToggle = document.getElementById("langToggle");
+  const langOptions = document.getElementById("langOptions");
+  const flags = document.querySelectorAll("#langOptions img");
+  const mainFlag = document.getElementById("currentFlag");
 
-    mainFlag.src = e.target.src;
+  // Show / hide dropdown
+  langToggle.addEventListener("click", () => {
+    langOptions.classList.toggle("show");
 
-    mainFlag.classList.add("jump");
+    mainFlag.classList.add("jump", "wave");
     setTimeout(() => {
-      mainFlag.classList.remove("jump");
-    }, 500);
+      mainFlag.classList.remove("jump", "wave");
+    }, 600);
   });
-});
 
+  // Change language
+  flags.forEach(flag => {
+    flag.addEventListener("click", function () {
+      const lang = this.getAttribute("data-lang");
+      changeLanguage(lang);
+      mainFlag.src = this.src;
+      langOptions.classList.remove("show");
+    });
+  });
 
-// =======================
-// Auto language on load
-// =======================
-window.addEventListener("DOMContentLoaded", () => {
+  // Close if clicked outside
+  document.addEventListener("click", function(e) {
+    if (!document.querySelector(".lang-float").contains(e.target)) {
+      langOptions.classList.remove("show");
+    }
+  });
+
+  // Auto load saved language
   const savedLang = localStorage.getItem("lang");
-
   if (savedLang) {
     changeLanguage(savedLang);
-  } else {
-    const userLang = navigator.language;
-
-    if (userLang.includes("ar")) {
-      changeLanguage("ar");
-    } else if (userLang.includes("ku")) {
-      changeLanguage("ku");
-    } else {
-      changeLanguage("en");
-    }
+    mainFlag.src = document.querySelector(`#langOptions img[data-lang="${savedLang}"]`).src;
   }
 });
