@@ -169,9 +169,14 @@ display: flex;
 }
 
 /* Category Product Pages */
-.category-page {
+
+  .category-page {
+  max-width: 1200px;      /* optional: constrain width */
+  margin: 0 auto;          /* center section horizontally */
+  text-align: center;      /* center content inside */
   padding: 150px 20px 50px;
-  text-align: center;
+}
+
 }
 
 .category-page h1 {
