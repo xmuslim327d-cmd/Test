@@ -12,6 +12,26 @@
 
 <header class="navbar">
   <div class="logo">Yara Store</div>
+  
+  <!-- Language Switcher: Add this BELOW the logo -->
+  <div class="language-dropdown">
+    <button class="lang-btn">
+      <img src="ku_flag.PNG" alt="Kurdish" class="lang-icon">
+      Language
+    </button>
+    <ul class="lang-menu">
+      <li onclick="changeLanguage('ku')">
+        <img src="ku_flag.PNG" alt="Kurdish" class="lang-icon"> Kurdish
+      </li>
+      <li onclick="changeLanguage('en')">
+        <img src="en_flag.PNG" alt="English" class="lang-icon"> English
+      </li>
+      <li onclick="changeLanguage('ar')">
+        <img src="ar_flag.PNG" alt="Arabic" class="lang-icon"> Arabic
+      </li>
+    </ul>
+  </div>
+
   <nav>
     <ul>
       <li><a href="#home-section" class="nav-link active">Home</a></li>
