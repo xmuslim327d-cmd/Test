@@ -139,3 +139,30 @@ function toggleLangMenu() {
 function closeLangMenu() {
   document.querySelector('.lang-menu').style.display = 'none';
 }
+
+
+const langCurrent = document.querySelector('.lang-current');
+const langMenu = document.querySelector('.lang-menu');
+
+langCurrent.addEventListener('click', () => {
+  langMenu.style.display = (langMenu.style.display === 'flex') ? 'none' : 'flex';
+});
+
+// Optional: hide dropdown after selecting a language
+document.querySelectorAll('.lang-menu img').forEach(flag => {
+  flag.addEventListener('click', (e) => {
+    const lang = e.target.dataset.lang;
+    console.log("Selected language:", lang);
+    // TODO: add your language switch logic here
+
+    langMenu.style.display = 'none';
+    langCurrent.innerHTML = `<img src="${e.target.src}" class="flag-small">`;
+  });
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.lang-dropdown')) {
+    langMenu.style.display = 'none';
+  }
+});
