@@ -53,7 +53,7 @@ display: flex;
   align-items: center;
   padding: 150px 20px 50px;
   min-height: 50vh;
-  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487605384775471187/IMG_4778.jpg?ex=69c9bffa&is=69c86e7a&hm=ddf76cc595113321b193d97bb1fbfb1ecc39440c5bcd308fcda51f37092f1ad0&'); /* custom background image */
+  background-image: url('back1.JPG'); /* custom background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -113,7 +113,7 @@ display: flex;
   text-align: center;
   padding: 80px 20px;
   min-height: 100vh;
-  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487757786178916483/IMG_4791.jpg?ex=69ca4de9&is=69c8fc69&hm=d3f22a67f508cc1777939595107945e62bf6693facd9fec3e69742de8eca9f8f&');
+  background-image: url('back2.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
