@@ -176,7 +176,11 @@ display: flex;
   flex-direction: column;
   align-items: center; /* centers all children including product grid */
   padding: 150px 20px 50px;
-  text-align: center;  /* centers text inside */
+  text-align: center;
+    min-height: 100vh;
+  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487597814006550568/IMG_4772.jpg?ex=69c9b8ed&is=69c8676d&hm=2ac0b9631fb0d87e6ec1d6e002561fb00998b560fdc2660f147c360645fd0204&');
+  background-size: cover;
+  background-position: center; /* centers text inside */
 }
 
 
