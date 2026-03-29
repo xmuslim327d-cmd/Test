@@ -302,8 +302,8 @@ display: flex;
   /* Fixed navbar menu */
   .navbar nav ul { 
     justify-content: flex-start; 
-    padding-left: 5px; /* reduce padding so Contact shows */
-    gap: 15px; /* optional spacing between options */
+    padding-left: 1px; /* reduce padding so Contact shows */
+    gap: 7px; /* optional spacing between options */
     overflow-x: auto; /* in case screen is too narrow */
   }
 
