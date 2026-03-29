@@ -207,36 +207,73 @@ display: flex;
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* ensures cards are centered */
+  justify-content: center;
   gap: 30px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
+/* Product Card */
 .product-card {
   width: 200px;
   flex: 0 0 auto;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   background-color: pink;
   color: white;
-  margin: 0 auto;
   text-align: center;
   padding: 10px;
+  margin: 0 auto;
+
+  /* New shadow */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
 }
 
-.product-card .price {
-  display: block;
-  margin-top: 5px;
-  font-weight: 600;
-  color: white; /* or white if background is pink */
+/* Hover effect */
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
+/* Product Image */
 .product-card img {
   width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Image zoom on hover */
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Price */
+.product-card .price {
+  display: block;
+  margin-top: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: white;
+  color: pink;
+  border-radius: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #25D366;
+  color: white;
 }
 
 /* Responsive */
