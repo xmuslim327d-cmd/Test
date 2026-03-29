@@ -103,7 +103,7 @@ function changeLanguage(lang) {
   // RTL support
   if (lang === "ar" || lang === "ku") {
     document.body.style.direction = "rtl";
-    document.body.style.textAlign = "right";
+    document.body.style.textAlign = "left";
   } else {
     document.body.style.direction = "ltr";
     document.body.style.textAlign = "left";
