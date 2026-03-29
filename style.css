@@ -170,17 +170,17 @@ display: flex;
 
 /* Category Product Pages */
 
-  .category-page {
+ .category-page {
   display: flex;
   background-color: white;
   flex-direction: column;
-  align-items: center; /* centers all children including product grid */
+  align-items: center;
   padding: 150px 20px 50px;
   text-align: center;
-    min-height: 100vh;
-  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487597814006550568/IMG_4772.jpg?ex=69c9b8ed&is=69c8676d&hm=2ac0b9631fb0d87e6ec1d6e002561fb00998b560fdc2660f147c360645fd0204&');
+  min-height: 100vh;
+  background-image: url('https://cdn.discordapp.com/attachments/1437821593056313537/1487597814006550568/IMG_4772.jpg');
   background-size: cover;
-  background-position: center; /* centers text inside */
+  background-position: center;
 }
 
 
@@ -243,6 +243,6 @@ display: flex;
   .hero-right { display: none; } /* remove images on mobile */
   .features { flex-direction: column; gap: 30px; }
   .category-cards { flex-direction: column; gap: 20px; align-items: center; }
-  .product-grid { flex-direction: column; gap: 20px; }
+  .product-grid { flex-direction: column; gap: 20px; align-item: center;}
   .navbar nav ul { justify-content: flex-start; padding-left: 50px; } /* move navbar options slightly left */
 }
