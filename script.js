@@ -185,3 +185,27 @@ document.addEventListener("DOMContentLoaded", function () {
     mainFlag.src = document.querySelector(`#langOptions img[data-lang="${savedLang}"]`).src;
   }
 });
+
+
+const track = document.querySelector(".slider-track");
+const leftBtn = document.querySelector(".slider-btn.left");
+const rightBtn = document.querySelector(".slider-btn.right");
+
+let position = 0;
+const cardWidth = 240; // product width + margin
+
+rightBtn.addEventListener("click", () => {
+  position -= cardWidth;
+  if (Math.abs(position) > track.scrollWidth - 300) {
+    position = 0; // go back to start
+  }
+  track.style.transform = `translateX(${position}px)`;
+});
+
+leftBtn.addEventListener("click", () => {
+  position += cardWidth;
+  if (position > 0) {
+    position = -(track.scrollWidth - 300);
+  }
+  track.style.transform = `translateX(${position}px)`;
+});
