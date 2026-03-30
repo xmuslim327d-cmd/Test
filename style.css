@@ -493,8 +493,8 @@ display: flex;
   position: absolute;
   top: 0;
   font-size: 13px;
-  background: #000;
-  color: #fff;
+  background: #ff4d8d;
+  color: pink;
   padding: 5px 8px;
   border-radius: 5px;
   opacity: 0;
@@ -553,6 +553,7 @@ display: flex;
 }
 
 .footer .made-by {
+  color: #ff4d8d;
   font-size: 12px;
   opacity: 0.8;
 }
