@@ -207,13 +207,13 @@ function updateSlider() {
 
 nextBtn.addEventListener("click", () => {
   index++;
-  if (index >= cards.length) index = cards.length - 1;
+  if (index >= cards.length) index = 0; // loop to first
   updateSlider();
 });
 
 prevBtn.addEventListener("click", () => {
   index--;
-  if (index < 0) index = 0;
+  if (index < 0) index = cards.length - 1; // loop to last
   updateSlider();
 });
 
