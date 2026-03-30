@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const track = document.querySelector(".slider-track");
-const cards = document.querySelectorAll(".product-card");
+const cards = document.querySelectorAll(".slider .product-card");
 const nextBtn = document.querySelector(".slider-btn.right");
 const prevBtn = document.querySelector(".slider-btn.left");
 
@@ -198,26 +198,23 @@ function updateSlider() {
   cards.forEach(card => card.classList.remove("active"));
   cards[index].classList.add("active");
 
-  const cardWidth = cards[0].offsetWidth + 20;
-  track.style.transform = `translateX(${-index * cardWidth + 120}px)`;
+  const sliderWidth = document.querySelector(".slider").offsetWidth;
+  const cardWidth = cards[index].offsetWidth + 30;
+
+  const move = (sliderWidth / 2) - (cardWidth / 2) - (index * cardWidth);
+  track.style.transform = `translateX(${move}px)`;
 }
 
 nextBtn.addEventListener("click", () => {
   index++;
-  if (index >= cards.length) index = 0;
+  if (index >= cards.length) index = cards.length - 1;
   updateSlider();
 });
 
 prevBtn.addEventListener("click", () => {
   index--;
-  if (index < 0) index = cards.length - 1;
+  if (index < 0) index = 0;
   updateSlider();
 });
 
-// Auto slide
-setInterval(() => {
-  nextBtn.click();
-}, 4000);
-
-// Start
 updateSlider();
