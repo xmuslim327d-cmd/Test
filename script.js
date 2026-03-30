@@ -41,7 +41,7 @@ const translations = {
       { title: "24/7 Support", desc: "Got a question? Support team stays on, 24/7" },
       { title: "Easy Return", desc: "If it doesn’t hit right, send it back — easy and fast" }
     ],
-    categories: { shopTitle: "Shop", howToBuyTitle: "How To Buy?", howToBuyDesc: "Screenshot a product and send it to us on WhatsApp with your address and phone number." },
+    categories: { shopTitle: "Product", howToBuyTitle: "How To Buy?", howToBuyDesc: "Screenshot a product and send it to us on WhatsApp with your address and phone number." },
     contact: { title: "Contact Us" },
     footer: { copyright: "© 2026 Yara Store. All rights reserved.", designedBy: "Designed by Yara Store" },
     products: [
