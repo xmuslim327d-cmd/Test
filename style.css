@@ -99,7 +99,7 @@ display: flex;
 
 /* Features Section */
 .features {
-  background-color: grey; /* colored background */
+  background-color: pink; /* colored background */
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -166,7 +166,7 @@ display: flex;
 
 /* Contact Section */
 .contact {
-  background-color: grey; /* colored background */
+  background-color: pink; /* colored background */
   text-align: center;
   padding: 5px 10px;
 }
@@ -266,14 +266,14 @@ display: flex;
   display: block;
   margin-top: 5px;
   font-weight: 600;
-  color: white;
+  color: #ff4d8d;
 }
 
 .order-btn {
   display: inline-block;
   margin-top: 8px;
   padding: 6px 12px;
-  background: pink;
+  background: white;
   color: #ff4d8d;
   border-radius: 20px;
   font-size: 13px;
