@@ -682,3 +682,55 @@ display: flex;
     display: none;
   }
 }
+
+
+
+
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Product card size inside slider */
+.slider .product-card {
+  min-width: 220px;
+  margin: 0 10px;
+}
+
+/* Arrows */
+.slider-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: pink;
+  color: white;
+  border: none;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.slider-btn:hover {
+  background: #ff4d8d;
+}
+
+.slider-btn.left {
+  left: 5px;
+}
+
+.slider-btn.right {
+  right: 5px;
+}
