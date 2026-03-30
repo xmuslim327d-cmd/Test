@@ -188,24 +188,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const track = document.querySelector(".slider-track");
-const leftBtn = document.querySelector(".slider-btn.left");
-const rightBtn = document.querySelector(".slider-btn.right");
+const cards = document.querySelectorAll(".product-card");
+const nextBtn = document.querySelector(".slider-btn.right");
+const prevBtn = document.querySelector(".slider-btn.left");
 
-let position = 0;
-const cardWidth = 240; // product width + margin
+let index = 0;
 
-rightBtn.addEventListener("click", () => {
-  position -= cardWidth;
-  if (Math.abs(position) > track.scrollWidth - 300) {
-    position = 0; // go back to start
-  }
-  track.style.transform = `translateX(${position}px)`;
+function updateSlider() {
+  cards.forEach(card => card.classList.remove("active"));
+  cards[index].classList.add("active");
+
+  const cardWidth = cards[0].offsetWidth + 20;
+  track.style.transform = `translateX(${-index * cardWidth + 120}px)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  index++;
+  if (index >= cards.length) index = 0;
+  updateSlider();
 });
 
-leftBtn.addEventListener("click", () => {
-  position += cardWidth;
-  if (position > 0) {
-    position = -(track.scrollWidth - 300);
-  }
-  track.style.transform = `translateX(${position}px)`;
+prevBtn.addEventListener("click", () => {
+  index--;
+  if (index < 0) index = cards.length - 1;
+  updateSlider();
 });
+
+// Auto slide
+setInterval(() => {
+  nextBtn.click();
+}, 4000);
+
+// Start
+updateSlider();
