@@ -631,3 +631,132 @@ display: flex;
   border-radius: 50%;
   animation: wave 0.6s ease;
 }
+
+
+/* ========================
+   Desktop / Laptop Fixes
+======================== */
+@media screen and (min-width: 901px) {
+
+  /* Navbar */
+  .navbar {
+    height: 60px;
+    padding: 20px 40px;
+    gap: 40px;
+  }
+
+  .navbar .logo {
+    font-size: 28px;
+  }
+
+  .navbar nav ul {
+    gap: 25px;
+  }
+
+  .navbar nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 180px 80px 80px;
+  }
+
+  .hero-left h1 {
+    font-size: 70px;
+  }
+
+  .hero-left button {
+    font-size: 22px;
+    padding: 18px 25px;
+  }
+
+  .hero-right img {
+    width: 400px;
+    margin-left: 50px;
+  }
+
+  /* Features Section */
+  .features {
+    justify-content: space-around;
+    padding: 50px 50px;
+  }
+
+  .features .feature h3 {
+    font-size: 18px;
+  }
+
+  .features .feature p {
+    font-size: 14px;
+  }
+
+  /* Categories Section */
+  .categories {
+    padding: 120px 80px;
+  }
+
+  .category-cards {
+    gap: 50px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  /* Category Page */
+  .category-page {
+    padding: 180px 80px 80px;
+  }
+
+  .category-page h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+
+  /* Buy Feature Section */
+  .buy-feature {
+    padding: 50px 60px;
+    font-size: 16px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    gap: 40px;
+  }
+
+  .product-card {
+    width: 250px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .product-card .price {
+    font-size: 16px;
+  }
+
+  .order-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-btn .Btn {
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-btn .Btn:hover {
+    width: 180px;
+    border-radius: 50px;
+  }
+
+  .whatsapp-btn .Btn:hover .text {
+    font-size: 1.3em;
+  }
+
+}
