@@ -25,9 +25,19 @@ body, html {
 }
 
 .navbar .logo {
-  font-weight: 800;
+  display: flex;
+  align-items: center; /* vertically center image and text */
+  gap: 10px; /* space between image and text */
   font-size: 24px;
-  color: white;
+  font-weight: bold;
+  color: #ff4d8d; /* your pink */
+  cursor: pointer;
+}
+
+.navbar .logo img.logo-img {
+  width: 40px; /* adjust size */
+  height: 40px; /* adjust size */
+  border-radius: 50%; /* make circle if PNG isn't already */
 }
 
 .navbar nav ul {
