@@ -42,6 +42,7 @@ body, html {
 
 .navbar nav ul {
   list-style: none;
+  color: #ff4d8d;
   display: flex;
   gap: 10px;
 }
@@ -206,8 +207,8 @@ display: flex;
 
 /* How To Buy Section */
 .buy-feature {
-  background-color: grey; /* same style as feature section */
-  color: white;
+  background-color: pink; /* same style as feature section */
+  color: #ff4d8d;
   text-align: center;
   padding: 30px 20px;
   margin: 30px 0;
@@ -273,8 +274,8 @@ display: flex;
   display: inline-block;
   margin-top: 8px;
   padding: 6px 12px;
-  background: white;
-  color: pink;
+  background: pink;
+  color: #ff4d8d;
   border-radius: 20px;
   font-size: 13px;
   text-decoration: none;
@@ -283,8 +284,8 @@ display: flex;
 }
 
 .order-btn:hover {
-  background: #25D366;
-  color: white;
+  background: white;
+  color: #ff4d8d;
 }
 
 @media screen and (max-width: 900px){
@@ -430,7 +431,7 @@ display: flex;
   border-radius: 1.1em;
   background-color: pink;
   cursor: pointer;
-  color: white;
+  color: #ff4d8d;
   padding: 1em 2em;
   transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
     letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
@@ -541,7 +542,7 @@ display: flex;
 
 /* Footer */
 .footer {
-  color: pink;
+  color: #ff4d8d;
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
