@@ -43,18 +43,32 @@ body, html {
 .navbar nav ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  padding-left: 10px;
 }
 
 .navbar nav ul li a {
+  display: block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 2px solid #ff4d8d;
   color: #ff4d8d;
   text-decoration: none;
   font-weight: 600;
+  font-size: 14px;
   transition: 0.3s;
 }
 
-.navbar nav ul li a:hover,
+.navbar nav ul li a:hover {
+  background: #ff4d8d;
+  color: white;
+}
+
+/* Active button */
 .navbar nav ul li a.active {
+  background: #ff4d8d;
+  color: white;
+}
   
 }
 
