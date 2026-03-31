@@ -328,7 +328,7 @@ display: flex;
   .navbar nav ul { 
     justify-content: flex-start; 
     padding-left: 0px; /* reduce padding so Contact shows */
-    gap: 40px; /* optional spacing between options */
+    gap: 10px; /* optional spacing between options */
     overflow-x: auto;
     /* in case screen is too narrow */
   }
