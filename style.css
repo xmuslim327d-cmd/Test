@@ -13,13 +13,13 @@ body, html {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 40px;
+  height: 70px;
   display: flex;
   background: pink;
   justify-content: flex-start;
   gap: 20px;
   align-items: center;
-  padding: 15px 20px;
+  padding: 0px 20px;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -73,12 +73,13 @@ body, html {
 }
 
 .hero {
-display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 150px 20px 50px;
-  min-height: 50vh;
-  background-image: url('back1.JPG'); /* custom background image */
+  margin-top: 70px;
+  min-height: 80vh;
+  background-image: url('back1.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
