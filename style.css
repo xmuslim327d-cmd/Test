@@ -73,13 +73,12 @@ body, html {
 
 
 .hero {
-  display: flex;
+display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 150px 20px 50px;
-  margin-top: 70px;
-  min-height: 80vh;
-  background-image: url('back1.JPG');
+  min-height: 50vh;
+  background-image: url('back1.JPG'); /* custom background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -329,7 +328,7 @@ body, html {
   .navbar nav ul { 
     justify-content: flex-start; 
     padding-left: 0px; /* reduce padding so Contact shows */
-    gap: 25px; /* optional spacing between options */
+    gap: 35px; /* optional spacing between options */
     overflow-x: auto;
     /* in case screen is too narrow */
   }
