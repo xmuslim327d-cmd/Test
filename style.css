@@ -736,3 +736,102 @@ display: flex;
 
 .slider-btn.left { left: 0px; }
 .slider-btn.right { right: 0px; }
+
+
+
+/* ========================
+   Desktop Warning Screen
+======================== */
+
+.desktop-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+/* Show warning on desktop */
+@media screen and (min-width: 901px) {
+  .site-content {
+    display: none;
+  }
+
+  .desktop-warning {
+    display: flex;
+  }
+}
+
+/* Show site on mobile */
+@media screen and (max-width: 900px) {
+  .site-content {
+    display: block;
+  }
+
+  .desktop-warning {
+    display: none;
+  }
+}
+
+/* ========================
+   Error Box Style
+======================== */
+
+.error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 320px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  background: #ff4d8d; /* your pink color */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  animation: popup 0.4s ease;
+}
+
+/* Icon */
+.error__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.error__icon path {
+  fill: #fff;
+}
+
+/* Text */
+.error__title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Close button */
+.error__close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.error__close path {
+  fill: #fff;
+}
+
+/* Popup animation */
+@keyframes popup {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
